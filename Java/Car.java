@@ -1,8 +1,13 @@
-public class Car {
+class Car {
     Integer id;
     String license;
-    String driver;
+    // se modifica el tipo de dato a Account para heredar los datos
+    Account driver;
     Integer passegenger;
+
+    public Car(String license, Account driver) {
+        this.license = license;
+    }
 
     void printDataCar() {
         System.out.println("License: " + license + " Driver: " + driver);
