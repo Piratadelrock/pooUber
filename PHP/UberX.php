@@ -1,5 +1,6 @@
 <?php
-
+// traemos el archivo php para la extension
+require_once('Car.php');
 class UberX extends Car
 {
   public $brand;

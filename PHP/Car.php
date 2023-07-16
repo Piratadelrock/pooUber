@@ -7,7 +7,6 @@ class Car
   public $driver;
   public $passengers;
 
-
   public function __construct($license, $driver)
   {
     $this->license = $license;
