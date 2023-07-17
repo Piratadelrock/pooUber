@@ -6,10 +6,6 @@ class Main {
     public static void main(String[] args) {
         System.out.println("Inicializando...");
 
-        // Car car = new Car("AMQ123", new Account("Andres Herrera", "AND1234"));
-        // car.passenger = 3;
-        // car.printDataCar();
-
         System.out.println("UberX:");
         UberX uberX = new UberX("UBX213",
                 new Account("Juan",
@@ -23,8 +19,20 @@ class Main {
         // uberX.passenger = 4;
         // de esta forma ya estaria encapsulado
         uberX.setPassenger(4);
-
         uberX.printDataCar();
+
+        // creamos el objeto uberVan
+        UberVan uberVan = new UberVan("UBX213",
+                new Account("Luisa",
+                        "ASD212",
+                        "Luisa@hotmail.com",
+                        "1234"));
+        uberVan.setPassenger(6);
+        uberVan.printDataCar();
+
+        // Car car = new Car("AMQ123", new Account("Andres Herrera", "AND1234"));
+        // car.passenger = 3;
+        // car.printDataCar();
 
         // Map<String, Map<String, Integer>> typeCarAccepted = new HashMap<>();
         // Map<String, Integer> innerMap = new HashMap<>();

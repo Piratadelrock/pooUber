@@ -9,6 +9,10 @@ class UberVan extends Car {
     // leather or vinyl
     ArrayList<String> seatsMaterial;
 
+    public UberVan(String license, Account driver) {
+        super(license, driver);
+    }
+
     public UberVan(
             String license, Account driver,
             Map<String, Map<String, Integer>> typeCarAccepted,

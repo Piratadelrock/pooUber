@@ -1,8 +1,8 @@
 class Car {
-    Integer id;
-    String license;
+    private Integer id;
+    private String license;
     // se modifica el tipo de dato a Account para heredar los datos
-    Account driver;
+    private Account driver;
     // modificador de acceso si no tiene nada toma el modificador como default
     private Integer passenger;
 
@@ -28,6 +28,30 @@ class Car {
         } else {
             System.out.println("Necesitas asignar 4 pasajeros");
         }
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
     }
 
 }
