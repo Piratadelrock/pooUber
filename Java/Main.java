@@ -1,22 +1,48 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 class Main {
     public static void main(String[] args) {
-        System.out.println("Hola Mundo Java");
+        System.out.println("Inicializando...");
 
-        Car car = new Car("AMQ123", new Account("Andres Herrera", "AND1234"));
-        car.passegenger = 3;
-        car.printDataCar();
+        // Car car = new Car("AMQ123", new Account("Andres Herrera", "AND1234"));
+        // car.passenger = 3;
+        // car.printDataCar();
 
-        Car car2 = new UberBlack("asd123",
-                new Account("Andres Herrera", "AND1234"),
-                "type", "vinyl");
-        car2.passegenger = 5;
-        car2.printDataCar();
+        System.out.println("UberX:");
+        UberX uberX = new UberX("UBX213",
+                new Account("Juan",
+                        "ASD212",
+                        "juan@hotmail.com",
+                        "1234"),
+                "chevrolet",
+                "Sonic");
 
+        // de esta manera quedaria sin encapsular
+        // uberX.passenger = 4;
+        // de esta forma ya estaria encapsulado
+        uberX.setPassenger(4);
+
+        uberX.printDataCar();
+
+        // Map<String, Map<String, Integer>> typeCarAccepted = new HashMap<>();
+        // Map<String, Integer> innerMap = new HashMap<>();
+        // innerMap.put("vinyl", 1);
+        // typeCarAccepted.put("type", innerMap);
+
+        // UberBlack uberBlack = new UberBlack("QWE123",
+        // new Account("AndreA Herrera", "AND1234"),
+        // "typeCarAccepted", "vma");
+        // uberBlack.passenger = 5;
+        // uberBlack.printDataCar();
+        // System.out.println(uberBlack.typeCarAccepted);
+
+        // forma 1 donde no hay herencia
         // Car car2 = new Car();
         // car2.license = "QWE123";
         // car2.driver = "Andrea Herrera";
-        // car2.passegenger = 3;
+        // car2.passenger = 3;
         // car2.printDataCar();
 
     }

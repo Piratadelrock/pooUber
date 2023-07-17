@@ -15,7 +15,6 @@ class UberVan extends Car {
             ArrayList<String> seatsMaterial) {
 
         super(license, driver);
-
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
     }

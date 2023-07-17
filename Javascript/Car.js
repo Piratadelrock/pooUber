@@ -3,12 +3,15 @@ class Car {
     this.id;
     this.license = license;
     this.driver = driver;
-    this.passegenger;
+    this.passenger;
   }
   printDataCar = () => {
     console.table(this.driver);
     console.log(this.driver.name);
     console.log(this.driver.document);
+  };
+  printDataCarU = (uber) => {
+    console.table(uber);
   };
 }
 /* con este podemos crear un metodo a
