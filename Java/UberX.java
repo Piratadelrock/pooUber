@@ -15,6 +15,10 @@ class UberX extends Car {
         // TODO Auto-generated constructor stub
     }
 
-    //
+    @Override
+    void printDataCar() {
+        super.printDataCar();
+        System.out.println("Modelo: " + model + " Brand: " + brand);
+    }
 
 }

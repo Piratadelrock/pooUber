@@ -4,7 +4,7 @@ class Car {
     // se modifica el tipo de dato a Account para heredar los datos
     private Account driver;
     // modificador de acceso si no tiene nada toma el modificador como default
-    private Integer passenger;
+    protected Integer passenger;
 
     public Car(String license, Account driver) {
         this.license = license;
